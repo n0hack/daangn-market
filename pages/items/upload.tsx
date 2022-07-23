@@ -4,7 +4,7 @@ type Props = {};
 
 const Upload: NextPage = ({}: Props) => {
   return (
-    <div className="px-4 py-16">
+    <div className="px-4 py-10 space-y-5">
       <div>
         <label className="w-full text-gray-600 hover:text-orange-500 hover:border-orange-500 cursor-pointer flex items-center justify-center border-2 border-dashed border-gray-300 h-48 rounded-md">
           <svg
@@ -21,11 +21,25 @@ const Upload: NextPage = ({}: Props) => {
               strokeLinejoin="round"
             />
           </svg>
-
           <input type="file" className="hidden" />
         </label>
       </div>
-      <div className="my-5">
+      <div>
+        <label
+          htmlFor="name"
+          className="text-sm font-medium text-gray-700 mb-1 block"
+        >
+          이름
+        </label>
+        <div className="rounded-md shadow-sm flex items-center">
+          <input
+            id="name"
+            type="text"
+            className="appearance-none w-full px-3 pr-7 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+          />
+        </div>
+      </div>
+      <div>
         <label
           htmlFor="price"
           className="text-sm font-medium text-gray-700 mb-1 block"
@@ -49,7 +63,7 @@ const Upload: NextPage = ({}: Props) => {
           htmlFor="description"
           className="text-sm font-medium text-gray-700 mb-1 block"
         >
-          상품 설명
+          설명
         </label>
         <textarea
           id="description"
@@ -58,7 +72,7 @@ const Upload: NextPage = ({}: Props) => {
         />
       </div>
       <button className="mt-4 w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-2 border border-transparent rounded-md shadow-sm text-sm font-medium focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none">
-        업로드하기
+        물건 등록하기
       </button>
     </div>
   );
