@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 
 type Props = {};
 
-const Live: NextPage = ({}: Props) => {
+const Stream: NextPage = ({}: Props) => {
   return (
-    <div className="py-10 px-4 divide-y-2 space-y-4">
+    <div className="py-10 divide-y-2 space-y-4">
       {[1, 2, 3, 4, 5].map((_, i) => (
         <div key={i} className="pt-4 first:pt-0 px-4">
           <div className="w-full rounded-md shadow-sm bg-slate-300 aspect-video " />
@@ -33,4 +33,4 @@ const Live: NextPage = ({}: Props) => {
   );
 };
 
-export default Live;
+export default Stream;
