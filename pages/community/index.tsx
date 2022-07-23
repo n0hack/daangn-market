@@ -1,8 +1,8 @@
-import React from "react";
+import type { NextPage } from "next";
 
 type Props = {};
 
-export default function Community({}: Props) {
+const Community: NextPage = ({}: Props) => {
   return (
     <div className="py-16 px-4 space-y-8">
       {[1, 2, 3, 4, 5, 6].map((_, i) => (
@@ -74,4 +74,6 @@ export default function Community({}: Props) {
       </button>
     </div>
   );
-}
+};
+
+export default Community;

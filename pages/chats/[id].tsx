@@ -1,8 +1,8 @@
-import React from "react";
+import type { NextPage } from "next";
 
 type Props = {};
 
-function ChatDetail({}: Props) {
+const ChatDetail: NextPage = ({}: Props) => {
   return (
     <div className="py-10 px-4 space-y-4">
       <div className="flex items-start space-x-2">
@@ -38,6 +38,6 @@ function ChatDetail({}: Props) {
       </div>
     </div>
   );
-}
+};
 
 export default ChatDetail;

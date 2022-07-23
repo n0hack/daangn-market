@@ -1,8 +1,8 @@
-import React from "react";
+import type { NextPage } from "next";
 
 type Props = {};
 
-export default function Chats({}: Props) {
+const Chats: NextPage = ({}: Props) => {
   return (
     <div className="py-10 divide-y-[1px] ">
       {[1, 1, 1, 1, 1, 1, 1].map((_, i) => (
@@ -19,4 +19,6 @@ export default function Chats({}: Props) {
       ))}
     </div>
   );
-}
+};
+
+export default Chats;

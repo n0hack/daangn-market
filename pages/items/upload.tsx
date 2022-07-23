@@ -1,4 +1,8 @@
-export default function upload() {
+import type { NextPage } from "next";
+
+type Props = {};
+
+const Upload: NextPage = ({}: Props) => {
   return (
     <div className="px-4 py-16">
       <div>
@@ -58,4 +62,6 @@ export default function upload() {
       </button>
     </div>
   );
-}
+};
+
+export default Upload;

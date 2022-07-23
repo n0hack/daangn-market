@@ -1,4 +1,8 @@
-export default function Write() {
+import { NextPage } from "next";
+
+type Props = {};
+
+const Write: NextPage = ({}: Props) => {
   return (
     <form className="px-4 py-10">
       <textarea
@@ -11,4 +15,6 @@ export default function Write() {
       </button>
     </form>
   );
-}
+};
+
+export default Write;
