@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 import { useState } from "react";
+import { cls } from "../libs/utils";
 
 type Props = {};
-
-const cls = (...classnames: string[]) => classnames.join(" ");
 
 const Enter: NextPage = ({}: Props) => {
   const [method, setMethod] = useState<"email" | "phone">("email");
